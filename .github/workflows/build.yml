@@ -19,11 +19,13 @@ jobs:
         java-version: '17'
         distribution: 'zulu'
 
-    - name: Grant Execute Permission for Gradlew
-      run: chmod +x gradlew
+    - name: Build with Gradle
+      uses: gradle/actions/setup-gradle@v3
+      with:
+        gradle-version: wrapper
 
     - name: Build Debug APK
-      run: ./gradlew assembleDebug --stacktrace
+      run: ./gradlew assembleDebug --no-daemon
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
