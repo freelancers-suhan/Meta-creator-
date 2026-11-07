@@ -19,14 +19,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Setup Gradle Wrapper
-      run: gradle wrapper
-
     - name: Grant Execute Permission for Gradlew
       run: chmod +x gradlew
 
-    - name: Build Debug APK Cleanly
-      run: ./gradlew assembleDebug -x lint -x test --offline --stacktrace || ./gradlew assembleDebug --stacktrace
+    - name: Build APK Without Tasks
+      run: ./gradlew assembleDebug --no-daemon --console=plain
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
