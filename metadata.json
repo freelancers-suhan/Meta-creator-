@@ -1,0 +1,6 @@
+{
+  "name": "HRS TOOL",
+  "description": "A mobile-friendly automated Meta account creation and management utility with instant temp mail integration, verification, and credentials tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

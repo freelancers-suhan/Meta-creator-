@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HRS TOOL</string>
+    <string name="title_generator">Generator</string>
+    <string name="title_dashboard">Live Batch</string>
+    <string name="title_history">Accounts</string>
+    <string name="title_guide">Guide</string>
+    <string name="cookie_label">Meta Session Cookie</string>
+    <string name="cookie_hint">Paste cookie containing csrftoken &amp; hatch_native_auth_csrf</string>
+    <string name="paste_cookie">Paste Cookie</string>
+    <string name="save_cookie">Save Cookie</string>
+    <string name="password_label">Password</string>
+    <string name="batch_count">Batch Count (1–5)</string>
+    <string name="start_creation">Start Meta Create</string>
+    <string name="cooldown_wait">Cooling down</string>
+    <string name="copy_email">Copy Email</string>
+    <string name="copy_password">Copy Password</string>
+    <string name="copy_uid">Copy UID</string>
+    <string name="copied">Copied to clipboard!</string>
+    <string name="no_accounts_yet">No accounts generated yet</string>
+    <string name="clear_history">Clear History</string>
+    <string name="export_all">Export All</string>
+</resources>
